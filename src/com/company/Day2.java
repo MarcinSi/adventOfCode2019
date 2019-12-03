@@ -25,16 +25,10 @@ public class Day2 {
             int i = 0;
             while (tokenizer.hasMoreTokens()) {
                 token = tokenizer.nextToken();
-                //  System.out.println(token);
                 table[i] = Integer.parseInt(token);
                 i++;
             }
-
-            // algorytm komputera
-            for (int j = 0; j <= table.length - 2; j = j + 4) {
-                System.out.println(table[j] + ", " + table[j + 1] + ", " + table[j + 2] + ", " + table[j + 3]);
-            }
-            System.out.println("Tabela zmieniona: ");
+//
             table[1] = 12;
             table[2] = 2;
             int [] output = new int[table.length];
@@ -50,7 +44,6 @@ public class Day2 {
                     System.out.println("kod 99");
                     break;
                 }
-                System.out.println(table[j] + ", " + table[j + 1] + ", " + table[j + 2] + ", " + table[j + 3]);
             }
             System.out.println("Odpowiedź: " + table[0]);
         } catch (FileNotFoundException e) {
